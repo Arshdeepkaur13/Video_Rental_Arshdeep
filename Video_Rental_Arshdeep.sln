@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Video_Rental_Arshdeep", "Video_Rental_Arshdeep\Video_Rental_Arshdeep.csproj", "{3D23EFF2-F2A3-4BE3-8326-C8745917A969}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject_Arshdeep", "UnitTestProject_Arshdeep\UnitTestProject_Arshdeep.csproj", "{D5E1A236-7867-44EF-987E-7993E6E4FAAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D23EFF2-F2A3-4BE3-8326-C8745917A969}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D23EFF2-F2A3-4BE3-8326-C8745917A969}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D23EFF2-F2A3-4BE3-8326-C8745917A969}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D23EFF2-F2A3-4BE3-8326-C8745917A969}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5E1A236-7867-44EF-987E-7993E6E4FAAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5E1A236-7867-44EF-987E-7993E6E4FAAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5E1A236-7867-44EF-987E-7993E6E4FAAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5E1A236-7867-44EF-987E-7993E6E4FAAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {87FA8C9E-3907-4CF6-9908-0E945E58EBC5}
+	EndGlobalSection
+EndGlobal

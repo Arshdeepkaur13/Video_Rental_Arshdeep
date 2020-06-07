@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3D23EFF2-F2A3-4BE3-8326-C8745917A969}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Video_Rental_Arshdeep</RootNamespace>
+    <AssemblyName>Video_Rental_Arshdeep</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonFunctions.cs" />
+    <Compile Include="CustomerAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerAdd.Designer.cs">
+      <DependentUpon>CustomerAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerEdit.Designer.cs">
+      <DependentUpon>CustomerEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerView.Designer.cs">
+      <DependentUpon>CustomerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MovieAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovieAdd.Designer.cs">
+      <DependentUpon>MovieAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MovieEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovieEdit.Designer.cs">
+      <DependentUpon>MovieEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MovieIssue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovieIssue.Designer.cs">
+      <DependentUpon>MovieIssue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MovieReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovieReturn.Designer.cs">
+      <DependentUpon>MovieReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MovieView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovieView.Designer.cs">
+      <DependentUpon>MovieView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="myUnitTest.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Store.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Store.Designer.cs">
+      <DependentUpon>Store.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TopList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TopList.Designer.cs">
+      <DependentUpon>TopList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VideoRental_ArshdeepDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VideoRental_ArshdeepDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VideoRental_ArshdeepDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VideoRental_ArshdeepDataSet1.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CustomerAdd.resx">
+      <DependentUpon>CustomerAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerEdit.resx">
+      <DependentUpon>CustomerEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerView.resx">
+      <DependentUpon>CustomerView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovieAdd.resx">
+      <DependentUpon>MovieAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovieEdit.resx">
+      <DependentUpon>MovieEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovieIssue.resx">
+      <DependentUpon>MovieIssue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovieReturn.resx">
+      <DependentUpon>MovieReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovieView.resx">
+      <DependentUpon>MovieView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Store.resx">
+      <DependentUpon>Store.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TopList.resx">
+      <DependentUpon>TopList.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="VideoRental_ArshdeepDataSet.xsc">
+      <DependentUpon>VideoRental_ArshdeepDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VideoRental_ArshdeepDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VideoRental_ArshdeepDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VideoRental_ArshdeepDataSet.xss">
+      <DependentUpon>VideoRental_ArshdeepDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VideoRental_ArshdeepDataSet1.xsc">
+      <DependentUpon>VideoRental_ArshdeepDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="VideoRental_ArshdeepDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VideoRental_ArshdeepDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VideoRental_ArshdeepDataSet1.xss">
+      <DependentUpon>VideoRental_ArshdeepDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
